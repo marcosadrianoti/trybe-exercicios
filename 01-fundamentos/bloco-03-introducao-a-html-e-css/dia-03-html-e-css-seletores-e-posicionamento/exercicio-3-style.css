@@ -1,0 +1,11 @@
+h1, p {
+    text-align: center;
+}
+
+.cor-do-fundo:hover {
+    background-color: aquamarine;
+}
+
+li:active {
+    color: blue;
+}
