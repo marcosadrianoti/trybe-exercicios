@@ -9,3 +9,7 @@ h1, p {
 li:active {
     color: blue;
 }
+
+ol, ul {
+    list-style: none
+}
