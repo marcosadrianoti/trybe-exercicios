@@ -7,10 +7,11 @@
   .goomba {
     width: 100px;
     position: absolute;
-    top: 370px;
+    top: 380px;
 }
 
   .baloon {
+    /* 3 - Posicione o balão para que se torne uma fala de Bowser. */
     position: absolute;
     left: 200px;
     z-index: 1;
@@ -29,8 +30,6 @@
   .bowser {
     width: 200px;
     position: absolute;
-    top: 370px;
-    left: 300px;
+    top: 270px;
+    left: 450px;
   }
-
-3 - Posicione o balão para que se torne uma fala de Bowser.
