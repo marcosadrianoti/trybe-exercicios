@@ -38,8 +38,43 @@ li em {
 }
 
 
-/* Faça todas as li's terem 20px de tamanho de fonte e, para todo texto em itálico dentro de alguma li, utilize a propriedade font-weight para deixá-lo negrito. */
+/* Para os requisitos 4 e 5 tive que olhar no gabarito para entender como funciona. Muito interessante... sigo aprendendo! */
 
+#linguagens li:not(:nth-child(n + 4)) {
+    color: blue;
+  }
+  
+.pink-bg {
+background-color: pink;
+}
+
+#linguagens li::after[content="java*"] {
+    color: orange;
+  }
+
+#aliados li a:hover {
+font-weight: 700;
+}
+
+#aliados li a[href*="stackoverflow"] {
+color: orange;
+}
+
+#aliados li a[href*="w3schools"] {
+color: green;
+}
+
+#aliados li a[href*="mozilla"] {
+color: black;
+}
+
+#aliados li a[href*="devdocs"] {
+color: yellow;
+}
+
+#aliados li a[href*="trybe"] {
+color: green;
+}
 
 
 
