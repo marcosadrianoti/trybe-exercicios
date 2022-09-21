@@ -10,6 +10,15 @@ ol li {
     text-transform: uppercase;
 }
 
+h1, h2, h3 {
+    color: red;
+}
+
+h1 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
 /*Esta opção deixa o html mais limpo!
 
 ol li:nth-of-type(even) {
@@ -19,3 +28,14 @@ ol li:nth-of-type(even) {
 ol li:nth-of-type(odd) {
     text-transform: uppercase;
 } */
+
+
+
+
+
+
+
+
+
+
+/* Faça todas as tags Header (h1, h2...) possuírem cor de fonte vermelha e, se alguma delas estiver em itálico, aumente seu tamanho para 40px e acrescente uma borda de 1px preta e sólida. */
