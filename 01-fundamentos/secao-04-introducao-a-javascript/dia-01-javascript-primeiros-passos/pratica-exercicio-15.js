@@ -1,4 +1,5 @@
 const salarioBruto = 3000.00;
+let salarioBase = null;
 let alicotaInss = null;
 let alicotaInssMax = null;
 
@@ -12,3 +13,10 @@ if (salarioBruto <= 1556.94) {
   alicotaInssMax = 570.88;  
 }
 
+if (alicotaInssMax !== null) {
+  salarioBase = salarioBruto - alicotaInssMax
+} else {
+  salarioBase = salarioBruto - (salarioBruto * alicotaInss) / 100;
+}
+
+console.log(salarioBase);
