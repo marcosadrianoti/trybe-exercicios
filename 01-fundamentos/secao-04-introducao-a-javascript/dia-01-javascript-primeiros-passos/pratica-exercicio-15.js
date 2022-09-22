@@ -1,5 +1,6 @@
-const salarioBruto = 3000.00;
+const salarioBruto = 3000;
 let salarioBase = null;
+let salarioLiquido = null;
 let alicotaInss = null;
 let alicotaInssMax = null;
 let alicotaIr = null;
@@ -45,9 +46,8 @@ if (salarioBase <= 1903.98) {
 // Calculando o IR
 impostoRenda = (salarioBase * alicotaIr)/100 - parcelaIr
 
+// Calculando Salário-líquido
+salarioLiquido = salarioBase - impostoRenda
 
-
-
-
-
-// console.log(salarioBase, impostoRenda);
+console.log("Salário-bruto: R$ " + salarioBruto);
+console.log("Salário-líquido: R$ " + salarioLiquido);
