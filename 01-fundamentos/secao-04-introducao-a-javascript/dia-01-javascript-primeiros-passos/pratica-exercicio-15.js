@@ -1,9 +1,10 @@
-const salarioBruto = 6000.00;
+const salarioBruto = 3000.00;
 let salarioBase = null;
 let alicotaInss = null;
 let alicotaInssMax = null;
 let alicotaIr = null;
 let parcelaIr = null;
+let impostoRenda = null;
 
 // Estabelecendo a alicota do INSS
 if (salarioBruto <= 1556.94) {
@@ -42,9 +43,11 @@ if (salarioBase <= 1903.98) {
 }
 
 // Calculando o IR
+impostoRenda = (salarioBase * alicotaIr)/100 - parcelaIr
 
 
 
 
 
-console.log(salarioBase);
+
+// console.log(salarioBase, impostoRenda);
