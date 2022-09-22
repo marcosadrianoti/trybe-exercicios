@@ -39,6 +39,7 @@ for (let index = 0; index < numbers.length; index++) {
 console.log("Maior valor no array: " + maiorValor);
 
 // Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”
+
 let qtImpares = 0
 for (let index = 0; index < numbers.length; index++) {
   if (numbers[index] % 2 != 0) {
@@ -50,3 +51,14 @@ if (qtImpares == 0) {
 }else {
   console.log("Quantidade de números ímpares no array:", qtImpares)
 }
+
+// Utilizando for, descubra qual o menor valor contido no array e imprima-o
+
+let menorValor = numbers[0];
+for (let index = 0; index < numbers.length; index++) {
+  if (numbers[index] < menorValor) {
+    menorValor = numbers[index];
+  }
+}
+
+console.log("Menor valor no array:", menorValor);
