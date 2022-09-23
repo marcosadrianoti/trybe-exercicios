@@ -3,7 +3,7 @@
 let number = 10;
 let array = [];
 let resultado = 1;
-for (let i = number; i > 0; i--) {
+for (let i = number; i > 0; i -= 1) {
   array.push(i);
 }
 for (const element of array) {
