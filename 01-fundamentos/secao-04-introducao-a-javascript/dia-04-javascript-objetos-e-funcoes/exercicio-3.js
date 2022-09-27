@@ -82,3 +82,16 @@ function repetedNumber(array) {
 }
 
 console.log(repetedNumber(Array));
+
+// Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+
+const n = 5;
+function sumNNumbers(n) {
+  sum = 0;
+  for (let index = 1; index <= n; index++) {
+    sum = index + sum;
+    
+  }
+  return sum;
+}
+console.log(sumNNumbers(n));
