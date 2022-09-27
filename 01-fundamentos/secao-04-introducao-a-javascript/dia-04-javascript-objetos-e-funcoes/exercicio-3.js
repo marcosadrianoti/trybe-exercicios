@@ -55,3 +55,30 @@ function biggestName(names) {
 }
 
 console.log(biggestName(namesArray));
+
+// Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+
+let Array = [2, 3, 2, 5, 8, 2, 3,];
+let qtItem = 0;
+let itensObjet = {};
+function repetedNumber(array) {
+  for (let number of array) {
+    let qt = 0;
+    for (let iterator of array) {
+      if (number == iterator) {
+        qt += 1;
+      }
+    }
+    itensObjet[number]=qt;
+  }
+  let finalNumber = ''
+  for (const key in itensObjet) {
+    if (itensObjet[key] > qtItem){
+      qtItem = itensObjet[key];
+      finalNumber = key;
+    }
+  }
+  return finalNumber;
+}
+
+console.log(repetedNumber(Array));
