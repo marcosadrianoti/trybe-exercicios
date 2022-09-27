@@ -78,7 +78,7 @@ function repetedNumber(array) {
       finalNumber = key;
     }
   }
-  return finalNumber;
+  return parseInt(finalNumber);
 }
 
 console.log(repetedNumber(Array));
