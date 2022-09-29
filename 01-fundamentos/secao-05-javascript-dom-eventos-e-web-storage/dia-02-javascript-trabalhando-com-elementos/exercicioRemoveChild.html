@@ -21,6 +21,12 @@
   </main>
   <script>
     // Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho
+    let todosDecendentes = document.querySelectorAll('section');
+    for (let decendente of todosDecendentes) {
+      if (decendente.id !== 'pai' && decendente.id !== 'elementoOndeVoceEsta' && decendente.id !== 'primeiroFilhoDoFilho') {
+        decendente.remove();
+      }
+    }
   </script>
 </body>
 </html>
