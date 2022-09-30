@@ -34,3 +34,14 @@ function addDecember() {
 }
 
 addDecember();
+// classe "buttons-container"
+function addHolidaysButton (){
+  const btnContainer = document.querySelector('.buttons-container'); 
+  const holidayBtn = document.createElement('button')
+  holidayBtn.textContent = 'Feriados';
+  holidayBtn.id = 'btn-holiday';
+  btnContainer.appendChild(holidayBtn);
+
+}
+
+addHolidaysButton();
