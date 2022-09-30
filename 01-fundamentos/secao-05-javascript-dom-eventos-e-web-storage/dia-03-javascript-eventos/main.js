@@ -13,20 +13,14 @@ const myWebpage = document.getElementById('my-spotrybefy');
 firstLi.addEventListener('click', addTech)
 secondLi.addEventListener('click', addTech)
 thirdLi.addEventListener('click', addTech)
-
+let listLis = document.querySelectorAll('li');
 function addTech(eventoDeOrigem) {
-  if (eventoDeOrigem.target == firstLi) {
-    firstLi.classList.add('tech');
-    secondLi.classList.remove('tech');
-    thirdLi.classList.remove('tech');
-  } else if (eventoDeOrigem.target == secondLi) {
-    firstLi.classList.remove('tech');
-    secondLi.classList.add('tech');
-    thirdLi.classList.remove('tech');
-  } else {
-    firstLi.classList.remove('tech');
-    secondLi.classList.remove('tech');
-    thirdLi.classList.add('tech');
+  for (const myLi of listLis) {
+    if (myLi == eventoDeOrigem.target) {
+      myLi.classList.add('tech');
+    }else{
+      myLi.classList.remove('tech');
+    }
   }
 }
 
