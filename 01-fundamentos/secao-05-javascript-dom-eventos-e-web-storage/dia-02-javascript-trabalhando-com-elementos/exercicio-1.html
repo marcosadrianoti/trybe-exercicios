@@ -70,14 +70,29 @@
     bodyTag.appendChild(elementMain);
     // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
     let mainTag = document.querySelector('main');
-    let elementSection = document.createElement('section');
-    elementSection.className = 'center-content';
-    mainTag.appendChild(elementSection);
-
-  // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
-  // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
-  // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+    let elementSection1 = document.createElement('section');
+    elementSection1.className = 'center-content';
+    mainTag.appendChild(elementSection1);
+    // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+    let sectionTag = document.querySelector('section');
+    let elementP = document.createElement('p');
+    elementP.innerText = 'Texto de teste';
+    sectionTag.appendChild(elementP);
+    //5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+    let elementSection2 = document.createElement('section');
+    elementSection2.className = 'left-content';
+    mainTag.appendChild(elementSection2);
+    // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+    let elementSection3 = document.createElement('section');
+    elementSection3.className = 'right-content';
+    mainTag.appendChild(elementSection3);
   // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
+  let sectionTag2 = document.querySelector('.left-content');
+  let elementImg = document.createElement('img');
+  elementImg.src = 'https://picsum.photos/200';
+  elementImg.className = 'small-image';
+  sectionTag2.appendChild(elementImg);
+  
   // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do section criado no passo 6;
   // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
   // Adicione a classe title na tag h1 criada;
