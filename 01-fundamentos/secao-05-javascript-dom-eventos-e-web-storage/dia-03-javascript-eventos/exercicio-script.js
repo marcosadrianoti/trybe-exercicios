@@ -93,11 +93,11 @@ listDays.addEventListener('mouseover', zoomInDay)
 listDays.addEventListener('mouseout', zoomOutDay)
 
 function zoomInDay(event) {
-    event.target.style.fontSize = '40px';
+  event.target.style.fontSize = '40px';
 }
 
 function zoomOutDay(event) {
-    event.target.style.fontSize = '20px';
+  event.target.style.fontSize = '20px';
 }
 
 function myTasks(task) {
@@ -109,7 +109,7 @@ function myTasks(task) {
 
 myTasks('Terminar o exercício.');
 
-function legendTask (cor){
+function legendTask(cor) {
   const myTasksDivPai = document.querySelector('.my-tasks');
   const myTaskDivFilho = document.createElement('div');
   myTaskDivFilho.classList.add('task');
@@ -135,4 +135,26 @@ function cloringDaySelected(event) {
     cor = myTask.style.backgroundColor;
   }
   event.target.style.color = cor;
+}
+
+let btnAddCommitment = document.querySelector('#btn-add');
+btnAddCommitment.addEventListener('click', addCommitment);
+taskInput = document.querySelector('#task-input');
+taskInput.addEventListener('keydown', detectedEnter)
+taskList = document.querySelector('.task-list');
+
+function addCommitment() {
+  let myCommitmentLi = document.createElement('li');
+  if (taskInput.value === '') {
+    alert('ATENÇÃO!!\nNenhum compromisso foi adicionado à sua lista');
+  } else {
+    myCommitmentLi.innerText = taskInput.value;
+    taskList.appendChild(myCommitmentLi);
+  }
+}
+
+function detectedEnter(event) {
+  if (event.key == 'Enter') {
+    addCommitment();
+  };
 }
