@@ -119,3 +119,12 @@ function legendTask (cor){
 }
 
 legendTask('green');
+
+const myTask = document.querySelector('.task');
+myTask.addEventListener('click', selectingTask)
+
+function selectingTask() {
+  myTask.classList.toggle('selected')
+}
+
+// selectingTask();
