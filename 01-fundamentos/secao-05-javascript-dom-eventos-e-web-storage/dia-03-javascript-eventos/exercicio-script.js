@@ -49,10 +49,10 @@ holidayBtn.addEventListener('click', coloringHolidays);
 function coloringHolidays() {
   const listHolidays = document.querySelectorAll('.holiday');
   let colorHolidays = '';
-  if (listHolidays[0].style.backgroundColor === 'rgb(180, 180, 180)'){
-    colorHolidays ='rgb(238, 238, 238)';
-  }else{
-    colorHolidays ='rgb(180, 180, 180)';
+  if (listHolidays[0].style.backgroundColor === 'rgb(180, 180, 180)') {
+    colorHolidays = 'rgb(238, 238, 238)';
+  } else {
+    colorHolidays = 'rgb(180, 180, 180)';
   }
   for (const holiday of listHolidays) {
     holiday.style.backgroundColor = colorHolidays;
@@ -68,3 +68,22 @@ function addFridayButton() {
 }
 
 addFridayButton();
+
+fridayBtn = document.querySelector('#btn-friday');
+fridayBtn.addEventListener('click', changeTextFriday);
+const listFridays = document.querySelectorAll('.friday');
+const numberFridays = [];
+for (const i of listFridays) {
+  numberFridays.push(i.innerText);
+}
+function changeTextFriday() {
+  if (listFridays[0].innerText === 'Sextou!!') {
+    for (const key in listFridays) {
+      listFridays[key].innerText = numberFridays[key];
+    }
+  } else {
+    for (const key in listFridays) {
+      listFridays[key].innerText = 'Sextou!!';
+    }
+  }
+}
