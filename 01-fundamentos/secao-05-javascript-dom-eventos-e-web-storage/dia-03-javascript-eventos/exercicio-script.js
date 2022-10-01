@@ -108,3 +108,14 @@ function myTasks(task) {
 }
 
 myTasks('Terminar o exercício.');
+
+function legendTask (cor){
+  const myTasksDivPai = document.querySelector('.my-tasks');
+  const myTaskDivFilho = document.createElement('div');
+  myTaskDivFilho.classList.add('task');
+  myTaskDivFilho.style.backgroundColor = cor;
+  myTasksDivPai.appendChild(myTaskDivFilho);
+
+}
+
+legendTask('green');
