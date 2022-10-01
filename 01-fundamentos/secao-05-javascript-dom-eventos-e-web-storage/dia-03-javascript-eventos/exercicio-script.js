@@ -58,3 +58,13 @@ function coloringHolidays() {
     holiday.style.backgroundColor = colorHolidays;
   }
 }
+
+function addFridayButton() {
+  const btnContainer = document.querySelector('.buttons-container');
+  const holidayBtn = document.createElement('button')
+  holidayBtn.textContent = 'Sexta-feira';
+  holidayBtn.id = 'btn-friday';
+  btnContainer.appendChild(holidayBtn);
+}
+
+addFridayButton();
