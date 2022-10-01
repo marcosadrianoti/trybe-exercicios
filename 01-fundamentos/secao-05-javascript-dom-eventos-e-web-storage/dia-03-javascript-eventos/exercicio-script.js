@@ -13,11 +13,10 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 
-// Escreva seu código abaixo. 4, 11, 18 e 25 <ul id="days"> <li class="day">3</li>
+// Escreva seu código abaixo.
 function addDecember() {
   const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   const days = document.querySelector('#days');
-  console.log(days);
   for (const dayNumber of decemberDaysList) {
     const dayNumberItem = document.createElement('li');
     dayNumberItem.innerText = dayNumber;
@@ -34,14 +33,28 @@ function addDecember() {
 }
 
 addDecember();
-// classe "buttons-container"
-function addHolidaysButton (){
-  const btnContainer = document.querySelector('.buttons-container'); 
+
+function addHolidaysButton() {
+  const btnContainer = document.querySelector('.buttons-container');
   const holidayBtn = document.createElement('button')
   holidayBtn.textContent = 'Feriados';
   holidayBtn.id = 'btn-holiday';
   btnContainer.appendChild(holidayBtn);
-
 }
 
 addHolidaysButton();
+
+holidayBtn = document.querySelector('#btn-holiday');
+holidayBtn.addEventListener('click', coloringHolidays);
+function coloringHolidays() {
+  const listHolidays = document.querySelectorAll('.holiday');
+  let colorHolidays = '';
+  if (listHolidays[0].style.backgroundColor === 'rgb(180, 180, 180)'){
+    colorHolidays ='rgb(238, 238, 238)';
+  }else{
+    colorHolidays ='rgb(180, 180, 180)';
+  }
+  for (const holiday of listHolidays) {
+    holiday.style.backgroundColor = colorHolidays;
+  }
+}
