@@ -95,6 +95,16 @@ listDays.addEventListener('mouseout', zoomOutDay)
 function zoomInDay(event) {
     event.target.style.fontSize = '40px';
 }
+
 function zoomOutDay(event) {
     event.target.style.fontSize = '20px';
 }
+
+function myTasks(task) {
+  const myTasksDiv = document.querySelector('.my-tasks');
+  const myTaskSpan = document.createElement('span');
+  myTaskSpan.innerText = task;
+  myTasksDiv.appendChild(myTaskSpan);
+}
+
+myTasks('Terminar o exercício.');
