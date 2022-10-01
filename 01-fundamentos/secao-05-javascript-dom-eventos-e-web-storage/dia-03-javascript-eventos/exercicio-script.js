@@ -87,3 +87,14 @@ function changeTextFriday() {
     }
   }
 }
+
+const listDays = document.querySelector('#days');
+listDays.addEventListener('mouseover', zoomInDay)
+listDays.addEventListener('mouseout', zoomOutDay)
+
+function zoomInDay(event) {
+    event.target.style.fontSize = '40px';
+}
+function zoomOutDay(event) {
+    event.target.style.fontSize = '20px';
+}
