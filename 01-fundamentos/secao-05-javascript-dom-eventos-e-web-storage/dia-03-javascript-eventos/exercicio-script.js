@@ -127,4 +127,12 @@ function selectingTask() {
   myTask.classList.toggle('selected')
 }
 
-// selectingTask();
+listDays.addEventListener('click', cloringDaySelected);
+
+function cloringDaySelected(event) {
+  let cor = 'rgb(119, 119, 119)';
+  if (myTask.classList.contains('selected') && myTask.style.backgroundColor != event.target.style.color) {
+    cor = myTask.style.backgroundColor;
+  }
+  event.target.style.color = cor;
+}
