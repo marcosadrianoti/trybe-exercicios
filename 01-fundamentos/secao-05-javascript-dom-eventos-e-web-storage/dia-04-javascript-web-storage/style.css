@@ -1,0 +1,16 @@
+section {
+  border: 1px solid black;
+}
+
+#menu {
+  width: 100%;
+  height: 100px;
+}
+
+#page {
+  width: 100%;
+  height: 100%;
+}
+
+
+
