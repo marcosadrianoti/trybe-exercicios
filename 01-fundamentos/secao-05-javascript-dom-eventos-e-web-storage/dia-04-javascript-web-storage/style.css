@@ -1,15 +1,26 @@
 section {
   border: 1px solid black;
+  padding: 10px;
+}
+
+p, h1{
+  margin-left: 10px;
 }
 
 #menu {
-  width: 100%;
+  width: 90%;
   height: 100px;
+  margin: auto;
 }
 
 #page {
-  width: 100%;
+  width: 90%;
   height: 100%;
+  margin: auto;
+}
+
+#fontSize, #spacelines {
+  width: 30px
 }
 
 
