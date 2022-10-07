@@ -1,0 +1,29 @@
+body {
+  width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+header {
+  height: 50px;
+}
+
+section {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#longText {
+  width: 95%;
+}
+
+#submit,
+#reset {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#datas {
+  border: 4px solid black;
+}
