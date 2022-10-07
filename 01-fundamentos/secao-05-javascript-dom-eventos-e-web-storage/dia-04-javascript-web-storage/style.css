@@ -3,11 +3,9 @@ section {
   padding: 10px;
 }
 
-p, h1{
+p,
+h1 {
   margin-left: 10px;
-}
-button {
-  /* ; */
 }
 
 #menu {
@@ -23,10 +21,7 @@ button {
   margin: auto;
 }
 
-#fontSize, #spacelines {
+#fontSize,
+#spacelines {
   width: 30px
-  
 }
-
-
-
