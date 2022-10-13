@@ -54,4 +54,13 @@ figcaption {
     font-size: 25px;
     margin: 35px;
   }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    width: 50%;
+  }
 }
