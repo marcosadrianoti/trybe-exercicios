@@ -6,6 +6,7 @@ body {
   margin: 0 auto;
   width: 100%;
   background: #fff;
+  
 }
 
 #header {
@@ -47,6 +48,7 @@ body {
 #content-container {
   width: 100%;
   background: #FFF;
+  border: 1px solid black
 }
 
 #content {
@@ -56,6 +58,7 @@ body {
   width: 60%;
   padding: 20px 0;
   margin: 0 0 0 4%;
+  border: 1px solid rgb(229, 62, 62)
 }
 
 #content h2 {
@@ -99,6 +102,28 @@ body {
     display: none;
   }
   body {
+    /* display: flex;
+    flex-direction: column; */
     padding: 0;
+  }
+  /* #content {
+    align-items:stretch;
+  } */
+  /* #content-container {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  
+  #content :nth-child(2) {
+    width: auto;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #navigation li a {
+    border-right: none;
   }
 }
