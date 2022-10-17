@@ -6,7 +6,7 @@ body {
   margin: 0 auto;
   width: 100%;
   background: #fff;
-  
+
 }
 
 #header {
@@ -96,34 +96,50 @@ body {
   }
 
 }
-
-@media screen and (max-width: 480px){
+/* Precisei olhar no gabarito para ajustes finais */
+@media screen and (max-width: 480px) {
   aside {
     display: none;
   }
+
   body {
-    /* display: flex;
-    flex-direction: column; */
     padding: 0;
   }
-  /* #content {
-    align-items:stretch;
-  } */
-  /* #content-container {
+
+  #content {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  #content-container {
+    background: #FFF;
     display: flex;
     flex-direction: column;
-  } */
+    align-items: center;
+  }
 
-  
   #content :nth-child(2) {
-    width: auto;
+    flex-grow: 2;
   }
 
   ul {
     display: flex;
     flex-direction: column;
   }
+
   #navigation li a {
     border-right: none;
+  }
+
+  #header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 35px;
+  }
+
+  #navigation {
+    margin-top: 75px;
   }
 }
