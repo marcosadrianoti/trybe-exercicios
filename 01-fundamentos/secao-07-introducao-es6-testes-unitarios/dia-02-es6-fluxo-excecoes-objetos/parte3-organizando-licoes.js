@@ -32,3 +32,9 @@ const listingKeys = (obj) => {
 }
 
 listingKeys(lesson3);
+
+const sizeObj = (obj) => {
+  console.log(obj);
+}
+
+sizeObj(lesson3);
