@@ -49,6 +49,15 @@ const creatingAllLessons = () => {
   const newLesson2 = {'lesson2': lesson2};
   const newLesson3 = {'lesson3': lesson3};
   const allLessons = Object.assign({}, newLesson1, newLesson2, newLesson3)
-  console.log(allLessons);
+  return allLessons;
 }
-creatingAllLessons();
+const allLessons = creatingAllLessons();
+console.log(allLessons);
+
+const totalStudents = () => {
+  const studentsLesson1 = allLessons.lesson1.numeroEstudantes;
+  const studentsLesson2 = allLessons.lesson2.numeroEstudantes;
+  const studentsLesson3 = allLessons.lesson3.numeroEstudantes;
+  console.log(studentsLesson1 + studentsLesson2 + studentsLesson3);
+}
+totalStudents();
