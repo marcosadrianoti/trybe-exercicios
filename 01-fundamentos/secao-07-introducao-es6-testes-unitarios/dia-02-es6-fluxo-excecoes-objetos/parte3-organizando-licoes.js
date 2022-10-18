@@ -58,6 +58,20 @@ const totalStudents = () => {
   const studentsLesson1 = allLessons.lesson1.numeroEstudantes;
   const studentsLesson2 = allLessons.lesson2.numeroEstudantes;
   const studentsLesson3 = allLessons.lesson3.numeroEstudantes;
-  console.log(studentsLesson1 + studentsLesson2 + studentsLesson3);
+  return studentsLesson1 + studentsLesson2 + studentsLesson3;
 }
-totalStudents();
+console.log(totalStudents());
+
+const getValueByNumber = (lesson, position) => {
+  const values = Object.values(lesson);
+  return values[position];
+}
+console.log(getValueByNumber(lesson1, 0));
+
+
+const verifyPair = (lesson, key, value) => {
+  const lessonKeys = Object.keys(lesson);
+  const test = lessonKeys.includes(key) && lesson[key] == value ? true : false;
+  return test;
+};
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
