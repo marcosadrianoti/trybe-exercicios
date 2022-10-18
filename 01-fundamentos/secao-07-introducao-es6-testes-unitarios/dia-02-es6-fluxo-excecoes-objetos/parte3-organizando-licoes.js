@@ -43,3 +43,12 @@ const listingValues = (obj) => {
   }
 }
 listingValues(lesson3);
+
+const creatingAllLessons = () => {
+  const newLesson1 = {'lesson1': lesson1};
+  const newLesson2 = {'lesson2': lesson2};
+  const newLesson3 = {'lesson3': lesson3};
+  const allLessons = Object.assign({}, newLesson1, newLesson2, newLesson3)
+  console.log(allLessons);
+}
+creatingAllLessons();
