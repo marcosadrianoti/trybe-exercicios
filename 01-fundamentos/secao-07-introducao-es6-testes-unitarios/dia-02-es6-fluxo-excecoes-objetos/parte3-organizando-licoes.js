@@ -21,20 +21,25 @@ const lesson3 = {
 const addTurno = (obj, key, value) => {
   obj[key] = value;
 }
-
 addTurno(lesson2, 'turno', 'noite');
 
 const listingKeys = (obj) => {
-  const Keys = Object.keys(obj);
-  for (const key of Keys) {
+  const keys = Object.keys(obj);
+  for (const key of keys) {
     console.log(key);
   }
 }
-
 listingKeys(lesson3);
 
 const sizeObj = (obj) => {
   console.log(obj);
 }
-
 sizeObj(lesson3);
+
+const listingValues = (obj) => {
+  const values = Object.values(obj);
+  for (const value of values) {
+    console.log(value);
+  }
+}
+listingValues(lesson3);
