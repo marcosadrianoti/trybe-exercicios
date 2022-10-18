@@ -23,4 +23,12 @@ const addTurno = (obj, key, value) => {
 }
 
 addTurno(lesson2, 'turno', 'noite');
-console.log(lesson2);
+
+const listingKeys = (obj) => {
+  const Keys = Object.keys(obj);
+  for (const key of Keys) {
+    console.log(key);
+  }
+}
+
+listingKeys(lesson3);
