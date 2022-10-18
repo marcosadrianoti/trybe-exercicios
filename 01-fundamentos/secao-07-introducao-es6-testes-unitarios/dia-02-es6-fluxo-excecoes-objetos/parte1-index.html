@@ -23,7 +23,7 @@
       }
     }
     const isNumber = (value1, value2) => {
-      if (isNaN(value1) || isNaN(value2) ) {
+      if (isNaN(value1) || isNaN(value2)) {
         throw new Error('Os valores devem ser numéricos');
       }
     };
@@ -37,7 +37,7 @@
         document.getElementById('result').innerHTML = `Resultado: ${result}`;
       } catch (error) {
         document.getElementById('result').innerHTML = error.message;
-      }finally{
+      } finally {
         document.getElementById('value1').value = '';
         document.getElementById('value2').value = '';
       }
