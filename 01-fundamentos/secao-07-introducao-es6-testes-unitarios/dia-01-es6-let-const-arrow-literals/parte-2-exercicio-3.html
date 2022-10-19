@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clicando</title>
+</head>
+<body>
+  <p id="totalClicks"></p>
+  <button id="btn">click aqui!</button>
+  <script>
+    const totalClicks = document.getElementById('totalClicks');
+    const btn = document.getElementById('btn');
+    let clickCount = 0;
+    totalClicks.innerText = clickCount
+    const getClicks = () => {
+      clickCount = totalClicks.innerText == ''? 0: clickCount += 1;
+      totalClicks.innerText = clickCount;
+    }
+    btn.addEventListener('click', getClicks);
+  </script>
+</body>
+</html>
