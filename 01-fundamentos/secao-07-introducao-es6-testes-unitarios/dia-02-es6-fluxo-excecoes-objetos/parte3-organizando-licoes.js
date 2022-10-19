@@ -68,7 +68,6 @@ const getValueByNumber = (lesson, position) => {
 }
 console.log(getValueByNumber(lesson1, 0));
 
-
 const verifyPair = (lesson, key, value) => {
   const lessonKeys = Object.keys(lesson);
   const test = lessonKeys.includes(key) && lesson[key] == value ? true : false;
