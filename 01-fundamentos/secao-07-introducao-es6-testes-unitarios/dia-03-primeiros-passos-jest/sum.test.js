@@ -1,4 +1,4 @@
-const { sum, myRemove } = require('./sum');
+const { sum, myRemove, myFizzBuzz } = require('./sum');
 
 describe('Função sum', () => {
   test('Teste se o retorno de sum(4, 5) é 9', () => {
@@ -23,5 +23,10 @@ describe('Função myRemove', () => {
   });
   test('A chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado [1, 2, 3, 4]', () => {
     expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
+  });
+});
+describe('Função myFizzBuzz', () => {
+  test('Chamada com um número divisível por 3 e 5', () => {
+    expect(myFizzBuzz(15)).toEqual('fizzbuzz');
   });
 });
