@@ -10,4 +10,7 @@ describe('Função sum', () => {
   test('Lança um erro quando os parâmetros são 4 e "5"', () => {
     expect(()=>{sum(4, '5')}).toThrow(Error);
   });
+  test('A mensagem de erro é “parameters must be numbers” quando realizar a chamada sum(4, "5")', () => {
+    expect(()=>{sum(4, '5')}).toThrow('parameters must be numbers');
+  });
 });
