@@ -11,21 +11,22 @@ const testingScope = (escopo) => {
 
 testingScope(true);
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2, 1];
+let oddsAndEvens = [13, 3, 4, 10, 7, 2, 1];
 
-const sortOddsAndEvens = (array) => {
-  let temporary = null;
-  for (let index1 = 1; index1 < array.length; index1 += 1) {
-    for (let index2 = 0; index2 < array.length; index2 += 1) {
-      if (array[index1] < array[index2]) {
-        temporary = array[index1];
-        array[index1] = array[index2];
-        array[index2] = temporary;
-      }
-    }
-  }
+// const sortOddsAndEvens = (array) => {
+//   let temporary = null;
+//   for (let index1 = 1; index1 < array.length; index1 += 1) {
+//     for (let index2 = 0; index2 < array.length; index2 += 1) {
+//       if (array[index1] < array[index2]) {
+//         temporary = array[index1];
+//         array[index1] = array[index2];
+//         array[index2] = temporary;
+//       }
+//     }
+//   }
 
-  return array;
-};
+//   return array;
+// };
 
-console.log(`Os números ${sortOddsAndEvens(oddsAndEvens)} se encontram ordenados de forma crescente!`);
+console.log(oddsAndEvens.sort(function(a, b){return a-b}));
+// console.log(`Os números ${sortOddsAndEvens(oddsAndEvens)} se encontram ordenados de forma crescente!`);
