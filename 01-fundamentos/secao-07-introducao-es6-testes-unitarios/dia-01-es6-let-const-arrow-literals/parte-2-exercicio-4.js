@@ -13,6 +13,7 @@ const substituaX = (name) => {
 
 const minhasSkills = (minhaFrase) => {
   const skills = ['HTML', 'CSS', 'JavaScript'];
-  return finalFrase = `${minhaFrase}\nMinhas três principais habilidades são:\n${skills.join('\n')}`
+  let finalFrase = `${minhaFrase}\nMinhas três principais habilidades são:\n${skills.join('\n')}`;
+  return finalFrase;
 }
 console.log(minhasSkills(substituaX('Marcos'))); 
