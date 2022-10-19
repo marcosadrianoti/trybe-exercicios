@@ -1,0 +1,18 @@
+const substituaX = (name) => {
+  const frase = 'Tryber x aqui!';
+  let splitedFrase = frase.split(' ');
+  novaFrase = '';
+  for (let index = 0; index < splitedFrase.length; index++) {
+    if (splitedFrase[index] == 'x') {
+      splitedFrase[index] = name;
+    }
+  }
+  novaFrase = splitedFrase.join(' ');
+  return novaFrase;
+}
+
+const minhasSkills = (minhaFrase) => {
+  const skills = ['HTML', 'CSS', 'JavaScript'];
+  return finalFrase = `${minhaFrase}\nMinhas três principais habilidades são:\n${skills.join('\n')}`
+}
+console.log(minhasSkills(substituaX('Marcos'))); 
