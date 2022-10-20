@@ -1,4 +1,4 @@
-const { sum, myRemove, myFizzBuzz, encode, decode } = require('./sum');
+const { sum, myRemove, myFizzBuzz, encode, decode } = require('./mixFunctions');
 
 describe('Função sum', () => {
   test('Teste se o retorno de sum(4, 5) é 9', () => {
