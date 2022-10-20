@@ -47,5 +47,23 @@ function decode(text) {
   return caracters.join('');
 }
 
+const techList = (arrList, strName) => {
+  if (arrList.length) {
+  arrList.sort();
+  let newArrList = [];
+    for (const item of arrList) {
+      const obj = {};
+      obj.name = strName;
+      obj.tech = item;
+      newArrList.push(obj);
+    }
+    return newArrList;
+  } else {
+    return 'Vazio!';
+  }
+}
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
-module.exports = { sum, myRemove, myFizzBuzz, encode, decode };
+
+
+module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList };
