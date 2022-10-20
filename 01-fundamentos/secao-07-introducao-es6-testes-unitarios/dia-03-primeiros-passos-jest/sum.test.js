@@ -32,4 +32,7 @@ describe('Função myFizzBuzz', () => {
   test('Chamada com um número divisível por 3', () => {
     expect(myFizzBuzz(9)).toEqual('fizz');
   });
+  test('Chamada com um número divisível por 5', () => {
+    expect(myFizzBuzz(10)).toEqual('buzz');
+  });
 });
