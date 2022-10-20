@@ -35,4 +35,10 @@ describe('Função myFizzBuzz', () => {
   test('Chamada com um número divisível por 5', () => {
     expect(myFizzBuzz(10)).toEqual('buzz');
   });
+  test('Chamada com um número que não é divisível por 3 ou 5', () => {
+    expect(myFizzBuzz(8)).toEqual(8);
+  });
+  test('Chamada com um parâmetro que não é um número', () => {
+    expect(myFizzBuzz('2')).toEqual(false);
+  });
 });
