@@ -45,9 +45,9 @@ const listingValues = (obj) => {
 listingValues(lesson3);
 
 const creatingAllLessons = () => {
-  const newLesson1 = {'lesson1': lesson1};
-  const newLesson2 = {'lesson2': lesson2};
-  const newLesson3 = {'lesson3': lesson3};
+  const newLesson1 = { 'lesson1': lesson1 };
+  const newLesson2 = { 'lesson2': lesson2 };
+  const newLesson3 = { 'lesson3': lesson3 };
   const allLessons = Object.assign({}, newLesson1, newLesson2, newLesson3)
   return allLessons;
 }
@@ -78,9 +78,10 @@ console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
 const mathClass = (allLessons) => {
   const lessons = Object.keys(allLessons);
   let students = 0;
+  let materia = '';
   for (const lesson of lessons) {
     materia = allLessons[lesson].materia;
-    if (materia == 'Matemática'){
+    if (materia == 'Matemática') {
       students += allLessons[lesson].numeroEstudantes;
     }
   }
@@ -88,3 +89,29 @@ const mathClass = (allLessons) => {
 }
 
 console.log(mathClass(allLessons));
+
+const createReport = (allLessons, teacher) => {
+  const lessons = Object.keys(allLessons);
+  let prof = '';
+  const arrLessons = [];
+  let students = 0;
+  const objReport = {};
+  for (const lesson of lessons) {
+    prof = allLessons[lesson].professor;
+    if (prof == teacher) {
+      arrLessons.push(allLessons[lesson].materia);
+      students += allLessons[lesson].numeroEstudantes;
+    }
+  }
+  objReport.professor = teacher;
+  objReport.aulas = arrLessons;
+  objReport.estudantes = students;
+  return objReport;
+}
+
+console.log(createReport(allLessons, 'Maria Clara'));
+/* {
+  professor: 'Maria Clara',
+  aulas: [ 'Matemática', 'Matemática' ],
+  estudantes: 30
+} */
