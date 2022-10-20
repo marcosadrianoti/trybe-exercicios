@@ -1,4 +1,4 @@
-const { sum, myRemove, myFizzBuzz } = require('./sum');
+const { sum, myRemove, myFizzBuzz, encode, decode } = require('./sum');
 
 describe('Função sum', () => {
   test('Teste se o retorno de sum(4, 5) é 9', () => {
@@ -40,5 +40,11 @@ describe('Função myFizzBuzz', () => {
   });
   test('Chamada com um parâmetro que não é um número', () => {
     expect(myFizzBuzz('2')).toEqual(false);
+  });
+});
+describe('Funções encode e decode', () => {
+  test('Encode e decode são funções', () => {
+    expect(typeof encode).toBe('function');
+    expect(typeof decode).toBe('function');
   });
 });
