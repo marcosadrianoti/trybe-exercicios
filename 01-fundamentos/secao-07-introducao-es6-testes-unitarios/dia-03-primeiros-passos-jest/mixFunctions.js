@@ -62,7 +62,7 @@ const techList = (arrList, strName) => {
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 const hydrate = (str) => {
-  let arrNumbers = str.match(/\d/g);
+  let arrNumbers = str.match(/\d/g); //https://pt.stackoverflow.com/questions/3719/como-obter-apenas-os-n%C3%BAmeros-de-uma-string-em-javascript
   let sum = 0;
   for (const number of arrNumbers) {
     sum += parseInt(number);

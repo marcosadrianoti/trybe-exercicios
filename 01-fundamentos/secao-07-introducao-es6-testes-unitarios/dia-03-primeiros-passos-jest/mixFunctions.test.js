@@ -101,7 +101,7 @@ describe('Testa a função techList', () => {
   });
 });
 
-module.exports = techList;
+// module.exports = techList;
 
 // const hydrate = require('./hydrate.js');
 
