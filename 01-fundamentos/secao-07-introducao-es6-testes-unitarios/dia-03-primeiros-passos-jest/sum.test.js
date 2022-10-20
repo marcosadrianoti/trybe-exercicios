@@ -53,4 +53,12 @@ describe('Funções encode e decode', () => {
   test('1, 2, 3, 4, 5 são convertidas em a, e, i, o, u', () => {
     expect(decode('12345')).toEqual('aeiou');
   });
+  test('As demais letras/números não são convertidos', () => {
+    expect(encode('bcdfg')).toEqual('bcdfg');
+    expect(decode('67890')).toEqual('67890');
+  });
+  test('A string que é retornada pelas funções tem o mesmo número de caracteres que a string passada como parâmetro', () => {
+    expect(encode('bcdfg').length).toEqual('bcdfg'.length);
+    expect(decode('12345').length).toEqual('aeiou'.length);
+  });
 });
