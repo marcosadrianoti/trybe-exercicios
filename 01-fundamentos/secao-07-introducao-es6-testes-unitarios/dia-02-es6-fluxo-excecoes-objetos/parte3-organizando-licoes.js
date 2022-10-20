@@ -74,3 +74,17 @@ const verifyPair = (lesson, key, value) => {
   return test;
 };
 console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+
+const mathClass = (allLessons) => {
+  const lessons = Object.keys(allLessons);
+  let students = 0;
+  for (const lesson of lessons) {
+    materia = allLessons[lesson].materia;
+    if (materia == 'Matemática'){
+      students += allLessons[lesson].numeroEstudantes;
+    }
+  }
+  return `${students} estudantes assistiram às aulas de Matemática.`;
+}
+
+console.log(mathClass(allLessons));
