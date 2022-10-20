@@ -51,6 +51,6 @@ describe('Funções encode e decode', () => {
     expect(encode('aeiou')).toEqual('12345');
   });
   test('1, 2, 3, 4, 5 são convertidas em a, e, i, o, u', () => {
-    expect(encode('12345')).toEqual('aeiou');
+    expect(decode('12345')).toEqual('aeiou');
   });
 });
