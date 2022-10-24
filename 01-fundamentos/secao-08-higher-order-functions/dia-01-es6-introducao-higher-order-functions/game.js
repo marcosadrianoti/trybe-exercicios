@@ -27,5 +27,10 @@ const damageDragon = () => {
 const damageWarrior = () => {
   return Math.floor(Math.random() * ((warrior.strength * warrior.weaponDmg) - warrior.strength + 1) + warrior.strength);
 }
+const damageManaMage = () => {
+  const damage = Math.floor(Math.random() * ((mage.intelligence * 2) - mage.intelligence + 1) + mage.intelligence);
+  const spentMana = mage.mana < 15 ? 0 : 15;
+  return { 'damage': damage, 'spentMana': spentMana };
+}
 
 console.log(damageWarrior());
