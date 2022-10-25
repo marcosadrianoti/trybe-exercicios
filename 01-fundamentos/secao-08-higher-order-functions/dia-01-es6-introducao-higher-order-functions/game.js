@@ -33,4 +33,13 @@ const damageManaMage = () => {
   return { 'damage': damage, 'spentMana': spentMana };
 }
 
-console.log(damageWarrior());
+const gameActions = {
+  'warriorTurn': (callback) => {
+    const deferredDamage = callback();
+    dragon.healthPoints -= deferredDamage;
+    warrior.damage = deferredDamage;
+  },
+};
+
+// Não estou familiarizado com a dinâmica deste tipo de game, então fiquei sem saber o que fazer. Olhei o Gabarito para ter uma idéia aqui neste ponto.
+// Precisava ser melhor explicado a dinâmica do game.
