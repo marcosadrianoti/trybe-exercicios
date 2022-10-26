@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: auto;
+  font-size: 20px;
+  background-color: antiquewhite;
+}
+
+h1,
+h2 {
+  font-size: larger;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(250, 214, 167);
+  padding: 15px;
+}
+
+header p {
+  font-size: 25px;
+}
+
+aside {
+  background-color: antiquewhite;
+}
+
+article {
+  background-color: rgb(250, 247, 242);
+}
+
+article,
+aside,
+footer {
+  padding: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  font-size: small;
+  background-color: rgb(250, 214, 167);
+}
+
+@media screen and (min-width: 600px) {
+  header p {
+    font-size: 30px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  li {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  aside {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  header p {
+    font-size: 35px;
+  }
+
+  body {
+    width: 80%;
+    font-size: 25px;
+  }
+
+  article {
+    flex-grow: 1;
+    width: 50%;
+  }
+
+  aside {
+    width: 20%;
+    flex-grow: 1;
+  }
+
+  .container :nth-child(2) {
+    order: 1;
+  }
+
+  footer {
+    margin: auto;
+  }
+}
