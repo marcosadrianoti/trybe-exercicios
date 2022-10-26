@@ -55,9 +55,8 @@ const techList = (arrList, strName) => {
       newArrList.push(obj);
     }
     return newArrList;
-  } else {
-    return 'Vazio!';
   }
+  return 'Vazio!';
 }
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
