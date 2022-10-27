@@ -1,3 +1,4 @@
+const oldBooks = require('./exercise6');
 const books = [
   {
     id: 1,
@@ -61,19 +62,18 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-// Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
-
-// const expectedResult = [
-//   'O Senhor dos Anéis',
-//   'Fundação',
-//   'O Chamado de Cthulhu',
-// ];
-
-function oldBooks(array) {
-  return expectedResult = array.filter((book) => 2022 - book.releaseYear > 60).map((book) => book.name);
-}
-
-console.log(oldBooks(books));
-
-module.exports = oldBooks;
+describe("Testa a função oldBooks()", () => {
+  it("É uma função?", () => {
+    expect(typeof oldBooks).toBe('function');
+  });
+  it("Retorna um array.", () => {
+    expect(Array.isArray(oldBooks(books))).toBe(true);
+  });
+  it("Retorna um array com o nome de todos os livros com mais de 60 anos de publicação.", () => {
+    expect(oldBooks(books)).toStrictEqual([
+      'O Senhor dos Anéis',
+      'Fundação',
+      'O Chamado de Cthulhu',
+    ]);
+  });
+});
