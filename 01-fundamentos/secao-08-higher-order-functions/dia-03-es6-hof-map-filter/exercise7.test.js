@@ -1,3 +1,4 @@
+const authorWith3DotsOnName = require('./exercise7');
 const books = [
   {
     id: 1,
@@ -61,23 +62,14 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-// Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
-// const expectedResult = 'O Senhor dos Anéis';
-
-function authorWith3DotsOnName(array) {
-  const splitedListNames = array.map((book) => book.author.name.split(' '));
-  let result = '';
-  let foundName = '';
-  splitedListNames.forEach(element => {
-    if (element[0].endsWith('.') && element[1].endsWith('.') && element[2].endsWith('.')) {
-      foundName = element.join(' ');
-      result = array.find((book) => book.author.name === foundName).name;
-    }
+describe("Testa a função authorWith3DotsOnName()", () => {
+  it("É uma função?", () => {
+    expect(typeof authorWith3DotsOnName).toBe('function');
   });
-  return result
-}
-
-console.log(authorWith3DotsOnName(books));
-
-module.exports = authorWith3DotsOnName;
+  it("Retorna uma string.", () => {
+    expect(typeof authorWith3DotsOnName(books)).toBe('string');
+  });
+  it("Retorna o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.", () => {
+    expect(authorWith3DotsOnName(books)).toStrictEqual('O Senhor dos Anéis')
+  });
+});
