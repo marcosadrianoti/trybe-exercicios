@@ -100,3 +100,5 @@ function nameAndAge(books) {
 
 }
 console.log(nameAndAge(books));
+
+module.exports = nameAndAge;
