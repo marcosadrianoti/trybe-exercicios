@@ -1,3 +1,4 @@
+const fantasyOrScienceFictionAuthors = require('./exercise5');
 const books = [
   {
     id: 1,
@@ -61,21 +62,19 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-// Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
-
-// const expectedResult = [
-//   'Frank Herbert',
-//   'George R. R. Martin',
-//   'Isaac Asimov',
-//   'J. R. R. Tolkien',
-// ];
-
-function fantasyOrScienceFictionAuthors(array) {
-  return expectedResult = array.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia')
-    .map((book) => book.author.name).sort();
-}
-
-console.log(fantasyOrScienceFictionAuthors(books));
-
-module.exports = fantasyOrScienceFictionAuthors;
+describe("Testa a função fantasyOrScienceFictionAuthors()", () => {
+  it("É uma função?", () => {
+    expect(typeof fantasyOrScienceFictionAuthors).toBe('function');
+  });
+  it("Retorna um array.", () => {
+    expect(Array.isArray(fantasyOrScienceFictionAuthors(books))).toBe(true);
+  });
+  it("Retorna um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.", () => {
+    expect(fantasyOrScienceFictionAuthors(books)).toStrictEqual([
+      'Frank Herbert',
+      'George R. R. Martin',
+      'Isaac Asimov',
+      'J. R. R. Tolkien',
+    ]);
+  });
+});
