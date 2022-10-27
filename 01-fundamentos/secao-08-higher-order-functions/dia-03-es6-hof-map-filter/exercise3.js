@@ -100,3 +100,5 @@ function fantasyOrScienceFiction(books) {
 }
 
 console.log(fantasyOrScienceFiction(books));
+
+module.exports = fantasyOrScienceFiction;

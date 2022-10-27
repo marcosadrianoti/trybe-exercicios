@@ -69,7 +69,7 @@ describe("Testa a função nameAndAge()", () => {
   it("Retorna um array.", () => {
     expect(Array.isArray(nameAndAge(books))).toBe(true);
   });
-  it("Retorna um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA.", () => {
+  it("Retorna um array de objetos ordenado pela propriedade age.", () => {
     expect(nameAndAge(books)).toStrictEqual([
       { age: 31, author: 'Isaac Asimov' },
       { age: 38, author: 'H. P. Lovecraft' },
