@@ -93,3 +93,5 @@ function oldBooksOrdered(array) {
 };
 
 console.log(oldBooksOrdered(books));
+
+module.exports = oldBooksOrdered;
