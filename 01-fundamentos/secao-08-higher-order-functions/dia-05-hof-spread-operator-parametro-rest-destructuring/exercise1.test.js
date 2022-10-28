@@ -7,7 +7,6 @@
 // });
 const { rectangleArea, rectangle1, rectangle2, rectangle3 } = require('./exercise1');
 
-console.log(rectangle1);
 describe('Testa o funcionamento da função rectangleArea', () => {
   test('É uma função?', () => {
     expect(typeof rectangleArea).toBe('function');
