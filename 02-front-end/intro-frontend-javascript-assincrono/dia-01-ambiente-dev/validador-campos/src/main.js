@@ -8,7 +8,6 @@ const result = document.querySelector('p');
 
 execBtn.addEventListener('click', () => {
   let valueBoolean = false;
-  console.log(typeof inputText.value);
   switch (validations.value) {
   case '1':
     valueBoolean = validator.isAlpha(inputText.value, ['pt-BR']);
