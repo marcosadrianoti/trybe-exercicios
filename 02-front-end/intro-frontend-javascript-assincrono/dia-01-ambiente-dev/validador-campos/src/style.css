@@ -1,0 +1,44 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  padding: 15px;
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px black;
+}
+
+label {
+  margin-top: 15px;
+}
+
+button {
+  width: 30%;
+  height: 40px;
+  margin: 20px auto;
+  border-radius: 20px;
+  font-size: medium;
+  box-shadow: 5px 5px 5px rgb(67, 66, 66);
+}
+
+input, select{
+  height: 30px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+p {
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 20px auto;
+}
