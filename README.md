@@ -63,3 +63,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
    - ***Dia 05:*** _CSS Responsivo - Mobile First_  
    - ***Dia 06:*** _Projeto - Trybewarts_  
 </details>
+
+<details>
+  <summary><strong>Seção 7 - Introdução à JavaScript ES6 e Testes Unitários</strong></summary>
+  
+   - ***Dia 01:*** _Fluxo de exceções e manipulação de objetos_  
+   - ***Dia 02:*** _Primeiros passos em Jest_  
+   - ***Dia 03:*** _Matchers e cobertura de código_  
+   - ***Dia 04:*** _Projeto - JavaScript Testes Unitários_  
+</details>
