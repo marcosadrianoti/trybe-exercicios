@@ -96,3 +96,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
    - ***Dia 04:*** _Async, await e testes assíncronos_  
    - ***Dia 05:*** _Projeto - Carrinho de compras_  
 </details>
+
+<details>
+  <summary><strong>Seção 2 - Introdução ao React</strong></summary>
+  
+   - ***Dia 01:*** _'Hello, world!' no React!_  
+   - ***Dia 02:*** _Componentes React_  
+   - ***Dia 03:*** _Projeto - Solar System_  
+</details>
