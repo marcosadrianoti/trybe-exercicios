@@ -72,3 +72,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
    - ***Dia 03:*** _Matchers e cobertura de código_  
    - ***Dia 04:*** _Projeto - JavaScript Testes Unitários_  
 </details>
+
+<details>
+  <summary><strong>Seção 8 - Higher Order Functions do JavaScript ES6</strong></summary>
+  
+   - ***Dia 01:*** _JavaScript ES6 - Introdução a Higher Order Functions_  
+   - ***Dia 02:*** _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_  
+   - ***Dia 03:*** _JavaScript ES6 - Higher Order Functions - map e filter_  
+   - ***Dia 04:*** _JavaScript ES6 - Higher Order Functions - reduce_  
+   - ***Dia 05:*** _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_  
+   - ***Dia 06:*** _Projeto - Zoo functions_  
+</details>
