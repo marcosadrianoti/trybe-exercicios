@@ -52,3 +52,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
   - ***Dia 05:*** _Projeto - Arte com Pixels_  
   - ***Dia 06:*** _Projetos Bônus_  
 </details>
+
+<details>
+  <summary><strong>Seção 6 - HTML e CSS: Forms, Flexbox e Responsivo</strong></summary>
+  
+   - ***Dia 01:*** _HTML & CSS - Forms_  
+   - ***Dia 02:*** _Bibliotecas JavaScript e Frameworks CSS_  
+   - ***Dia 03:*** _CSS Flexbox - Parte 1_  
+   - ***Dia 04:*** _CSS Flexbox - Parte 2_  
+   - ***Dia 05:*** _CSS Responsivo - Mobile First_  
+   - ***Dia 06:*** _Projeto - Trybewarts_  
+</details>
