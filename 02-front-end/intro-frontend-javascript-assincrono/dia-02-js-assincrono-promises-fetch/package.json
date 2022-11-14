@@ -1,0 +1,23 @@
+{
+  "name": "dia-02-js-assincrono-promises-fetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open",
+    "lint": "eslint ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-trybe-frontend": "^1.3.1",
+    "sweetalert2": "^11.6.7",
+    "vite": "^3.2.3"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.27.0"
+  }
+}
